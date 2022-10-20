@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.container {
+  margin: 60px auto 0;
+  border: 7px solid black;
+  width: 500px;
+  background-color: rgb(34, 32, 32);
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.display {
+  width: 95%;
+  margin: auto;
+  min-height: 95px;
+  height: auto;
+  outline: 2px solid #000;
+  border: 5px solid #0069ed;
+  text-align: right;
+  padding: 15px;
+  font-size: 40px;
+  border-radius: 10px;
+  background-color: #706d6d;
+  color: rgb(228, 225, 225);
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.inner_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+}
+
+button {
+  font-family: monospace;
+  height: 100px;
+  border: 2px solid #808080;
+  padding: 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+  transform 150ms ease;
+  flex: 1 0 40px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 25px;
+  flex: 100px;
+}
+
+button:hover {
+  background: #3b90f9;
+}
+
+/* button {
+  outline: 5px solid #fff;
+  outline-offset: -4px;
+} */
+
+button:active {
+  transform: scale(0.85);
+}
+
+.reset {
+  background-color: rgb(140, 13, 13);
+}
+
+.reset:hover {
+  background: rgb(188, 18, 18);
+}
+
+.sign,
+.modulus {
+  background-color: orangered;
+}
+
+.sign:hover,
+.modulus:hover {
+  background: rgb(253, 94, 36);
+}
+
+
+.divide,
+.multiply,
+.subtract,
+.add {
+  background-color: rgb(13, 92, 13);
+}
+
+.divide:hover,
+.multiply:hover,
+.subtract:hover,
+.add:hover {
+  background-color: rgb(31, 161, 31);
+}
+
+.equal {
+  background-color: rgb(176, 37, 176);
+  flex-basis: 219px;
+}
+
+.equal:hover {
+  background-color: rgb(219, 47, 219);
+}
