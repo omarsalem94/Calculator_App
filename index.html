@@ -9,28 +9,28 @@
   <title>Calculator by Omar</title>
 </head>
 <body>
-  <div class="container">
-    <div class="display"></div>
+  <div class="container" data-previous-key-type>
+    <div class="display">0</div>
     <div class="inner_container">
-      <button class="reset">AC</button>
-      <!-- <button class="sign">+/-</button> -->
+      <button class="reset" data-action="clear" value="AC">AC</button>
+      <button class="sign" data-action="sign">+/-</button>
+      <button class="operator percent" data-action="percent" value="%">%</button>
+      <button class="operator divide" data-action="divide" value="/">/</button>
       <button class="operand" value="9">9</button>
-      <button class="operation modulus">%</button>
-      <button class="operation divide">/</button>
       <button class="operand" value="8">8</button>
       <button class="operand" value="7">7</button>
+      <button class="operator multiply" data-action="multiply" value="*">*</button>
       <button class="operand" value="6">6</button>
-      <button class="operation multiply">*</button>
       <button class="operand" value="5">5</button>
       <button class="operand" value="4">4</button>
+      <button class="operator subtract" data-action="subtract" value="-">-</button>
       <button class="operand" value="3">3</button>
-      <button class="operation subtract">-</button>
       <button class="operand" value="2">2</button>
       <button class="operand" value="1">1</button>
+      <button class="operator add" data-action="add" value="+">+</button>
       <button class="operand" value="0">0</button>
-      <button class="operation add">+</button>
-      <button class="point">.</button>
-      <button class="equals">=</button>
+      <button class="point" data-action="decimal" value=".">.</button>
+      <button class="equal" data-action="calculate" value="=">=</button>
     </div>
   </div>
 </body>

@@ -85,12 +85,12 @@ button:active {
 }
 
 .sign,
-.modulus {
+.percent {
   background-color: orangered;
 }
 
 .sign:hover,
-.modulus:hover {
+.percent:hover {
   background: rgb(253, 94, 36);
 }
 
