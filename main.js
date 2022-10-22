@@ -4,27 +4,29 @@ const display = document.querySelector('.display');
 const container = document.querySelector('.container');
 
 function add(firstNum, secondNum) {
-  return parseFloat(firstNum) + parseFloat(secondNum);
+  let total = parseFloat(firstNum) + parseFloat(secondNum);
+  return total.toFixed(2);
 }
 // console.log(add(1,2));
 
 function subtract(firstNum, secondNum) {
-  return parseFloat(firstNum) - parseFloat(secondNum);
+  let total = parseFloat(firstNum) - parseFloat(secondNum);
+  return total.toFixed(2);
 }
 // console.log(subtract(5,2));
 
 function multiply(firstNum, secondNum) {
-  return parseFloat(firstNum) * parseFloat(secondNum);
+  let total = parseFloat(firstNum) * parseFloat(secondNum);
+  return total.toFixed(2);
 }
 // console.log(multiply(2,2));
 
-
 function divide(firstNum, secondNum) {
   if (secondNum === '0') return 'no way!'
-  return parseFloat(firstNum) / parseFloat(secondNum);
+  let total = parseFloat(firstNum) / parseFloat(secondNum);
+  return total.toFixed(2);
 }
 // console.log(divide(4,2));
-
 
 function operate(firstNum, secondNum, operator) {
   switch(operator) {
@@ -42,7 +44,6 @@ function operate(firstNum, secondNum, operator) {
       break;
   }
 }
-
 // console.log(operate(1,1,'+'));
 // console.log(operate(2,1,'-'));
 // console.log(operate(2,2,'*'));
